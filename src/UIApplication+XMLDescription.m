@@ -18,7 +18,7 @@
 
 - (NSString *) xmlDescription {
 	NSMutableString *resultingXML = [NSMutableString stringWithFormat:@"\n<%s>", NAMEOF(self)];
-	[resultingXML appendFormat:@"\n\t<address>%d</address>", (NSInteger)self];
+	[resultingXML appendFormat:@"\n\t<address>%lu</address>", (NSUInteger)self];
 	
 
 	if(self.windows.count > 0) {

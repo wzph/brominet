@@ -15,9 +15,35 @@
 
 @implementation UIView (XMLDescription)
 
++(NSArray *)propertiesForXML {
+	return [NSArray arrayWithObjects:
+	@"tag",
+	@"frame",
+	@"bounds",
+	@"center",
+	@"transform",
+	@"subviews",
+	@"autoresizesSubviews",
+	@"autoresizingMask",
+	@"contentMode",
+	@"contentStretch",
+	@"clipsToBounds",
+	@"backgroundColor",
+	@"alpha",
+	@"opaque",
+	@"clearsContextBeforeDrawing",
+	@"hidden",
+	@"multipleTouchEnabled",
+	@"exclusiveTouch",
+	nil];
+}
 
 - (NSMutableString *) xmlAttributesWithPadding:(NSString *)padding {
-	NSMutableString *attributes = [NSMutableString stringWithFormat:@"\n%@\t<address>%d</address>", padding, (NSInteger)self];
+	NSMutableString *attributes = [NSMutableString stringWithFormat:@"\n%@\t<address>%lu</address>", padding, (NSUInteger)self];
+	for ( NSString *propertyName in [[self class] propertiesForXML] ) {
+		property
+		
+	}
 	[attributes appendFormat:@"\n%@\t<tag>%d</tag>", padding, [self tag]];
 	return attributes;
 }
