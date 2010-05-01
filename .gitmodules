@@ -1,0 +1,6 @@
+[submodule "other_src/asi-http-request"]
+	path = other_src/asi-http-request
+	url = git://github.com/undees/asi-http-request
+[submodule "other_src/cocoahttpserver"]
+	path = other_src/cocoahttpserver
+	url = git://github.com/undees/cocoahttpserver
