@@ -12,5 +12,6 @@
 @interface UIView (XMLDescription) 
 
 - (NSString *) xmlDescriptionWithStringPadding:(NSString *)padding;
++(NSArray *)gettersForXML;
 
 @end
