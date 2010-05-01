@@ -13,17 +13,75 @@
 static char httpServerKey;
 
 #if TARGET_IPHONE_SIMULATOR
+#import <objc/runtime.h>
 // http://stackoverflow.com/questions/1916130/objc-setassociatedobject-unavailable-in-iphone-simulator
-#include <dlfcn.h>
-void objc_setAssociatedObject(id object, void *key, id value, objc_AssociationPolicy policy) {
-    ((void (*)(id, void *, id, objc_AssociationPolicy)) dlsym(RTLD_NEXT, "objc_setAssociatedObject")) (object, key, value, policy);
+
+enum {
+    OBJC_ASSOCIATION_ASSIGN = 0,
+    OBJC_ASSOCIATION_RETAIN_NONATOMIC = 1,
+    OBJC_ASSOCIATION_COPY_NONATOMIC = 3,
+    OBJC_ASSOCIATION_RETAIN = 01401,
+    OBJC_ASSOCIATION_COPY = 01403
+};
+typedef uintptr_t objc_AssociationPolicy;
+
+@implementation NSObject (OTAssociatedObjectsSimulator)
+
+static CFMutableDictionaryRef theDictionaries = nil;
+
+static void Swizzle(Class c, SEL orig, SEL new) // swizzling by Mike Ash
+{
+    Method origMethod = class_getInstanceMethod(c, orig);
+    Method newMethod = class_getInstanceMethod(c, new);
+    if (class_addMethod(c, orig, method_getImplementation(newMethod), method_getTypeEncoding(newMethod)))
+        class_replaceMethod(c, new, method_getImplementation(origMethod), method_getTypeEncoding(origMethod));
+    else
+        method_exchangeImplementations(origMethod, newMethod);
 }
-id objc_getAssociatedObject(id object, void *key) {
-    return ((id (*)(id, void *)) dlsym(RTLD_NEXT, "objc_getAssociatedObject"))(object, key);
+
+- (NSMutableDictionary *)otAssociatedObjectsDictionary
+{
+    if (!theDictionaries)
+    {
+        theDictionaries = CFDictionaryCreateMutable(NULL, 0, NULL, &kCFTypeDictionaryValueCallBacks);
+        Swizzle([NSObject class], @selector(dealloc), @selector(otAssociatedObjectSimulatorDealloc));
+    }
+	
+    NSMutableDictionary *dictionary = (id)CFDictionaryGetValue(theDictionaries, self);
+    if (!dictionary)
+    {
+        dictionary = [NSMutableDictionary dictionary];
+        CFDictionaryAddValue(theDictionaries, self, dictionary);
+    }
+	
+    return dictionary;
 }
-void objc_removeAssociatedObjects(id object) {
-    ((void (*)(id)) dlsym(RTLD_NEXT, "objc_removeAssociatedObjects"))(object);
+
+- (void)otAssociatedObjectSimulatorDealloc
+{
+    CFDictionaryRemoveValue(theDictionaries, self);
+    [self otAssociatedObjectSimulatorDealloc];
 }
+
+@end
+
+void objc_setAssociatedObject(id object, void *key, id value, objc_AssociationPolicy policy)
+{
+    NSCAssert(policy == OBJC_ASSOCIATION_RETAIN_NONATOMIC, @"Only OBJC_ASSOCIATION_RETAIN_NONATOMIC supported");
+	
+    [[object otAssociatedObjectsDictionary] setObject:value forKey:[NSValue valueWithPointer:key]];
+}
+
+id objc_getAssociatedObject(id object, void *key)
+{
+    return [[object otAssociatedObjectsDictionary] objectForKey:[NSValue valueWithPointer:key]];
+}
+
+void objc_removeAssociatedObjects(id object)
+{
+    [[object otAssociatedObjectsDictionary] removeAllObjects];
+}
+
 #endif
 
 
