@@ -40,10 +40,9 @@
 
 - (NSMutableString *) xmlAttributesWithPadding:(NSString *)padding {
 	NSMutableString *attributes = [NSMutableString stringWithFormat:@"\n%@\t<address>%lu</address>", padding, (NSUInteger)self];
-	for ( NSString *propertyName in [[self class] propertiesForXML] ) {
-		property
-		
-	}
+//	for ( NSString *propertyName in [[self class] propertiesForXML] ) {
+//		
+//	}
 	[attributes appendFormat:@"\n%@\t<tag>%d</tag>", padding, [self tag]];
 	return attributes;
 }

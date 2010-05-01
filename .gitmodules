@@ -4,3 +4,6 @@
 [submodule "other_src/cocoahttpserver"]
 	path = other_src/cocoahttpserver
 	url = git://github.com/undees/cocoahttpserver
+[submodule "other_src/justplayed"]
+	path = other_src/justplayed
+	url = http://github.com/textarcana/justplayed.git
