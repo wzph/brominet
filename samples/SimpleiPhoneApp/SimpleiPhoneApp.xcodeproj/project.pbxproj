@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* SimpleiPhoneAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* SimpleiPhoneAppAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* SimpleiPhoneAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* SimpleiPhoneAppViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* SimpleiPhoneAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* SimpleiPhoneAppViewController.m */; };
+		8AB0CB82118BA3590035A798 /* NSObject+ClassName.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB0CB76118BA3590035A798 /* NSObject+ClassName.m */; };
+		8AB0CB83118BA3590035A798 /* ScriptRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB0CB78118BA3590035A798 /* ScriptRunner.m */; };
+		8AB0CB84118BA3590035A798 /* TouchSynthesis.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB0CB7A118BA3590035A798 /* TouchSynthesis.m */; };
+		8AB0CB85118BA3590035A798 /* UIApplication+XMLDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB0CB7C118BA3590035A798 /* UIApplication+XMLDescription.m */; };
+		8AB0CB86118BA3590035A798 /* UIView+XMLDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB0CB7E118BA3590035A798 /* UIView+XMLDescription.m */; };
+		8AB0CB87118BA3590035A798 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB0CB81118BA3590035A798 /* XPathQuery.m */; };
+		8AB0CB8A118BA59E0035A798 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		8AB0CB8B118BA59E0035A798 /* SimpleiPhoneAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* SimpleiPhoneAppViewController.xib */; };
+		8AB0CB8D118BA59E0035A798 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		8AB0CB8E118BA59E0035A798 /* SimpleiPhoneAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* SimpleiPhoneAppAppDelegate.m */; };
+		8AB0CB8F118BA59E0035A798 /* SimpleiPhoneAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* SimpleiPhoneAppViewController.m */; };
+		8AB0CB90118BA59E0035A798 /* NSObject+ClassName.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB0CB76118BA3590035A798 /* NSObject+ClassName.m */; };
+		8AB0CB91118BA59E0035A798 /* ScriptRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB0CB78118BA3590035A798 /* ScriptRunner.m */; };
+		8AB0CB92118BA59E0035A798 /* TouchSynthesis.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB0CB7A118BA3590035A798 /* TouchSynthesis.m */; };
+		8AB0CB93118BA59E0035A798 /* UIApplication+XMLDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB0CB7C118BA3590035A798 /* UIApplication+XMLDescription.m */; };
+		8AB0CB94118BA59E0035A798 /* UIView+XMLDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB0CB7E118BA3590035A798 /* UIView+XMLDescription.m */; };
+		8AB0CB95118BA59E0035A798 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB0CB81118BA3590035A798 /* XPathQuery.m */; };
+		8AB0CB97118BA59E0035A798 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		8AB0CB98118BA59E0035A798 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		8AB0CB99118BA59E0035A798 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* SimpleiPhoneAppAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleiPhoneAppAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* SimpleiPhoneAppAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleiPhoneAppAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* SimpleiPhoneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleiPhoneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* SimpleiPhoneAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleiPhoneAppViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* SimpleiPhoneAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleiPhoneAppViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* SimpleiPhoneAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleiPhoneAppViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* SimpleiPhoneApp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleiPhoneApp_Prefix.pch; sourceTree = "<group>"; };
+		8AB0CB75118BA3590035A798 /* NSObject+ClassName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+ClassName.h"; path = "../../src/NSObject+ClassName.h"; sourceTree = SOURCE_ROOT; };
+		8AB0CB76118BA3590035A798 /* NSObject+ClassName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+ClassName.m"; path = "../../src/NSObject+ClassName.m"; sourceTree = SOURCE_ROOT; };
+		8AB0CB77118BA3590035A798 /* ScriptRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScriptRunner.h; path = ../../src/ScriptRunner.h; sourceTree = SOURCE_ROOT; };
+		8AB0CB78118BA3590035A798 /* ScriptRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScriptRunner.m; path = ../../src/ScriptRunner.m; sourceTree = SOURCE_ROOT; };
+		8AB0CB79118BA3590035A798 /* TouchSynthesis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TouchSynthesis.h; path = ../../src/TouchSynthesis.h; sourceTree = SOURCE_ROOT; };
+		8AB0CB7A118BA3590035A798 /* TouchSynthesis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TouchSynthesis.m; path = ../../src/TouchSynthesis.m; sourceTree = SOURCE_ROOT; };
+		8AB0CB7B118BA3590035A798 /* UIApplication+XMLDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIApplication+XMLDescription.h"; path = "../../src/UIApplication+XMLDescription.h"; sourceTree = SOURCE_ROOT; };
+		8AB0CB7C118BA3590035A798 /* UIApplication+XMLDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+XMLDescription.m"; path = "../../src/UIApplication+XMLDescription.m"; sourceTree = SOURCE_ROOT; };
+		8AB0CB7D118BA3590035A798 /* UIView+XMLDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+XMLDescription.h"; path = "../../src/UIView+XMLDescription.h"; sourceTree = SOURCE_ROOT; };
+		8AB0CB7E118BA3590035A798 /* UIView+XMLDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+XMLDescription.m"; path = "../../src/UIView+XMLDescription.m"; sourceTree = SOURCE_ROOT; };
+		8AB0CB7F118BA3590035A798 /* XMLDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLDescription.h; path = ../../src/XMLDescription.h; sourceTree = SOURCE_ROOT; };
+		8AB0CB80118BA3590035A798 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XPathQuery.h; path = ../../src/XPathQuery.h; sourceTree = SOURCE_ROOT; };
+		8AB0CB81118BA3590035A798 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XPathQuery.m; path = ../../src/XPathQuery.m; sourceTree = SOURCE_ROOT; };
+		8AB0CB9D118BA59E0035A798 /* SimpleiPhoneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleiPhoneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107310486CEB800E47090 /* SimpleiPhoneApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SimpleiPhoneApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AB0CB96118BA59E0035A798 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AB0CB97118BA59E0035A798 /* Foundation.framework in Frameworks */,
+				8AB0CB98118BA59E0035A798 /* UIKit.framework in Frameworks */,
+				8AB0CB99118BA59E0035A798 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* SimpleiPhoneAppAppDelegate.h */,
+				1D3623250D0F684500981E51 /* SimpleiPhoneAppAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* SimpleiPhoneAppViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* SimpleiPhoneAppViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* SimpleiPhoneApp.app */,
+				8AB0CB9D118BA59E0035A798 /* SimpleiPhoneApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				8AB0CB74118BA3470035A798 /* Brominet */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* SimpleiPhoneApp_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2899E5210DE3E06400AC0155 /* SimpleiPhoneAppViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* SimpleiPhoneApp-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AB0CB74118BA3470035A798 /* Brominet */ = {
+			isa = PBXGroup;
+			children = (
+				8AB0CB75118BA3590035A798 /* NSObject+ClassName.h */,
+				8AB0CB76118BA3590035A798 /* NSObject+ClassName.m */,
+				8AB0CB77118BA3590035A798 /* ScriptRunner.h */,
+				8AB0CB78118BA3590035A798 /* ScriptRunner.m */,
+				8AB0CB79118BA3590035A798 /* TouchSynthesis.h */,
+				8AB0CB7A118BA3590035A798 /* TouchSynthesis.m */,
+				8AB0CB7B118BA3590035A798 /* UIApplication+XMLDescription.h */,
+				8AB0CB7C118BA3590035A798 /* UIApplication+XMLDescription.m */,
+				8AB0CB7D118BA3590035A798 /* UIView+XMLDescription.h */,
+				8AB0CB7E118BA3590035A798 /* UIView+XMLDescription.m */,
+				8AB0CB7F118BA3590035A798 /* XMLDescription.h */,
+				8AB0CB80118BA3590035A798 /* XPathQuery.h */,
+				8AB0CB81118BA3590035A798 /* XPathQuery.m */,
+			);
+			name = Brominet;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* SimpleiPhoneApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SimpleiPhoneApp" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleiPhoneApp;
+			productName = SimpleiPhoneApp;
+			productReference = 1D6058910D05DD3D006BFB54 /* SimpleiPhoneApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8AB0CB88118BA59E0035A798 /* SimpleiPhoneApp Brominet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AB0CB9A118BA59E0035A798 /* Build configuration list for PBXNativeTarget "SimpleiPhoneApp Brominet" */;
+			buildPhases = (
+				8AB0CB89118BA59E0035A798 /* Resources */,
+				8AB0CB8C118BA59E0035A798 /* Sources */,
+				8AB0CB96118BA59E0035A798 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SimpleiPhoneApp Brominet";
+			productName = SimpleiPhoneApp;
+			productReference = 8AB0CB9D118BA59E0035A798 /* SimpleiPhoneApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SimpleiPhoneApp" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* SimpleiPhoneApp */,
+				8AB0CB88118BA59E0035A798 /* SimpleiPhoneApp Brominet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* SimpleiPhoneAppViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AB0CB89118BA59E0035A798 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AB0CB8A118BA59E0035A798 /* MainWindow.xib in Resources */,
+				8AB0CB8B118BA59E0035A798 /* SimpleiPhoneAppViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* SimpleiPhoneAppAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* SimpleiPhoneAppViewController.m in Sources */,
+				8AB0CB82118BA3590035A798 /* NSObject+ClassName.m in Sources */,
+				8AB0CB83118BA3590035A798 /* ScriptRunner.m in Sources */,
+				8AB0CB84118BA3590035A798 /* TouchSynthesis.m in Sources */,
+				8AB0CB85118BA3590035A798 /* UIApplication+XMLDescription.m in Sources */,
+				8AB0CB86118BA3590035A798 /* UIView+XMLDescription.m in Sources */,
+				8AB0CB87118BA3590035A798 /* XPathQuery.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AB0CB8C118BA59E0035A798 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AB0CB8D118BA59E0035A798 /* main.m in Sources */,
+				8AB0CB8E118BA59E0035A798 /* SimpleiPhoneAppAppDelegate.m in Sources */,
+				8AB0CB8F118BA59E0035A798 /* SimpleiPhoneAppViewController.m in Sources */,
+				8AB0CB90118BA59E0035A798 /* NSObject+ClassName.m in Sources */,
+				8AB0CB91118BA59E0035A798 /* ScriptRunner.m in Sources */,
+				8AB0CB92118BA59E0035A798 /* TouchSynthesis.m in Sources */,
+				8AB0CB93118BA59E0035A798 /* UIApplication+XMLDescription.m in Sources */,
+				8AB0CB94118BA59E0035A798 /* UIView+XMLDescription.m in Sources */,
+				8AB0CB95118BA59E0035A798 /* XPathQuery.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SimpleiPhoneApp_Prefix.pch;
+				INFOPLIST_FILE = "SimpleiPhoneApp-Info.plist";
+				PRODUCT_NAME = SimpleiPhoneApp;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SimpleiPhoneApp_Prefix.pch;
+				INFOPLIST_FILE = "SimpleiPhoneApp-Info.plist";
+				PRODUCT_NAME = SimpleiPhoneApp;
+			};
+			name = Release;
+		};
+		8AB0CB9B118BA59E0035A798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SimpleiPhoneApp_Prefix.pch;
+				INFOPLIST_FILE = "SimpleiPhoneApp-Info.plist";
+				PRODUCT_NAME = SimpleiPhoneApp;
+			};
+			name = Debug;
+		};
+		8AB0CB9C118BA59E0035A798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SimpleiPhoneApp_Prefix.pch;
+				INFOPLIST_FILE = "/Users/wzph/Projects/brominet/samples/SimpleiPhoneApp/SimpleiPhoneApp-Info copy.plist";
+				PRODUCT_NAME = SimpleiPhoneApp;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "SimpleiPhoneApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AB0CB9A118BA59E0035A798 /* Build configuration list for PBXNativeTarget "SimpleiPhoneApp Brominet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AB0CB9B118BA59E0035A798 /* Debug */,
+				8AB0CB9C118BA59E0035A798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SimpleiPhoneApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
