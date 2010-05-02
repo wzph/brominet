@@ -86,7 +86,7 @@
 		8AB0CB7F118BA3590035A798 /* XMLDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLDescription.h; path = ../../src/XMLDescription.h; sourceTree = SOURCE_ROOT; };
 		8AB0CB80118BA3590035A798 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XPathQuery.h; path = ../../src/XPathQuery.h; sourceTree = SOURCE_ROOT; };
 		8AB0CB81118BA3590035A798 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XPathQuery.m; path = ../../src/XPathQuery.m; sourceTree = SOURCE_ROOT; };
-		8AB0CB9D118BA59E0035A798 /* SimpleiPhoneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleiPhoneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AB0CB9D118BA59E0035A798 /* SimpleiPhoneAppBrominet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleiPhoneAppBrominet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AB0CBE7118BAC670035A798 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncSocket.h; path = ../../other_src/cocoahttpserver/AsyncSocket.h; sourceTree = SOURCE_ROOT; };
 		8AB0CBE8118BAC670035A798 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncSocket.m; path = ../../other_src/cocoahttpserver/AsyncSocket.m; sourceTree = SOURCE_ROOT; };
 		8AB0CBEE118BAC670035A798 /* MyHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHTTPConnection.h; sourceTree = "<group>"; };
@@ -172,7 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* SimpleiPhoneApp.app */,
-				8AB0CB9D118BA59E0035A798 /* SimpleiPhoneApp.app */,
+				8AB0CB9D118BA59E0035A798 /* SimpleiPhoneAppBrominet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -342,7 +342,7 @@
 			);
 			name = "SimpleiPhoneApp Brominet";
 			productName = SimpleiPhoneApp;
-			productReference = 8AB0CB9D118BA59E0035A798 /* SimpleiPhoneApp.app */;
+			productReference = 8AB0CB9D118BA59E0035A798 /* SimpleiPhoneAppBrominet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -464,7 +464,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				BROMINET_ENABLED = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -473,7 +472,8 @@
 				HEADER_SEARCH_PATHS = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/usr/include/libxml2/**";
 				INFOPLIST_FILE = "SimpleiPhoneApp-Info.plist";
 				INFOPLIST_PREPROCESSOR_DEFINITIONS = "";
-				PRODUCT_NAME = SimpleiPhoneApp;
+				OTHER_CFLAGS = "-DBROMINET_ENABLED";
+				PRODUCT_NAME = SimpleiPhoneAppBrominet;
 			};
 			name = Debug;
 		};
@@ -497,6 +497,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
 				PREBINDING = NO;
 				SDKROOT = iphoneos3.1.2;
 			};

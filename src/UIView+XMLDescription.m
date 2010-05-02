@@ -137,7 +137,7 @@
 						getter = (CGAffineTransform (*)(id, SEL))[self methodForSelector:getterSelector];
 						CGAffineTransform theTransform = getter( self, getterSelector );
 						
-						[attributes appendFormat:@"\n%@\t\t<a>%.6f</b>", padding, theTransform.a];
+						[attributes appendFormat:@"\n%@\t\t<a>%.6f</a>", padding, theTransform.a];
 						[attributes appendFormat:@"\n%@\t\t<b>%.6f</b>", padding, theTransform.b];
 						[attributes appendFormat:@"\n%@\t\t<c>%.6f</c>", padding, theTransform.c];
 						[attributes appendFormat:@"\n%@\t\t<d>%.6f</d>", padding, theTransform.d];

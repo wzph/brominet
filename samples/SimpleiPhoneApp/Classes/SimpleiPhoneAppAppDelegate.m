@@ -9,10 +9,10 @@
 #import "SimpleiPhoneAppAppDelegate.h"
 #import "SimpleiPhoneAppViewController.h"
 
-//#ifdef BROMINET_ENABLED
+#ifdef BROMINET_ENABLED
 #import "BrominetInitializer.h"
 // #import Your App Delegate Category Here
-//#endif
+#endif
 
 @implementation SimpleiPhoneAppAppDelegate
 
@@ -27,17 +27,17 @@
     [window makeKeyAndVisible];
 
 	
-//#ifdef BROMINET_ENABLED
+#ifdef BROMINET_ENABLED
 	[BrominetInitializer initializeBrominet];
 	[self performSelector:@selector( httpServer )];
-//#endif
+#endif
 }
 
 - (void)dealloc {
-//#ifdef BROMINET_ENABLED
+#ifdef BROMINET_ENABLED
 	[self performSelector:@selector( setHttpServer: ) withObject:nil];
 	[MyHTTPConnection setSharedObserver:nil];
-//#endif
+#endif
 
     [viewController release];
     [window release];
